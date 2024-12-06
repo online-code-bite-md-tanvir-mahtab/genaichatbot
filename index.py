@@ -1,19 +1,6 @@
-API_KEY = "AIzaSyAcFmNvD4qsT8LSyJzt1mLwg9KtFkHXpq4"
-
-# import google.generativeai as genai
-# import os
-
-# genai.configure(api_key=API_KEY)
-
-# model = genai.GenerativeModel('gemini-pro')
-
-# while True:
-#     user_text = input("Enter your prompt: ")
-#     response = model.generate_content(user_text)
-#     print(f"bot response: {response.text}")
 from flask import Flask, render_template, request
 import google.generativeai as genai
-
+API_KEY = "AIzaSyAcFmNvD4qsT8LSyJzt1mLwg9KtFkHXpq4"
 # Initialize the Flask app
 app = Flask(__name__)
 
